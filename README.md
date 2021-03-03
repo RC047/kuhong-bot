@@ -134,6 +134,7 @@ Recode SC : Nurutomo
 
  TENTANG BOT | YES |
 | :-----------------: | :-------: |
+| Report|✅…|
 | Info Bot|✅…|
 | Status Bot|✅…|
 | Donasi|✅…|
