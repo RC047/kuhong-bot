@@ -1,5 +1,5 @@
 # Kuhong-V4
-Simple WhatsApp Bot
+Hanya Bot Biasa :v
 # Kuhong-V4
 Recode SC : Nurutomo
 
@@ -37,91 +37,111 @@ Recode SC : Nurutomo
 ```
 --------------
 
+
+## Fitur Bot
+
 | BOT SYSTEM | YES
 | :---------------------------------------------: | :-----------: |
-|  Daftar|âœ…|
-| Anti Toxic|âœ…|
-| Anti Delete Pesan|âœ…|
+|  Daftar|✅…|
+| Anti Toxic|✅…|
+| Anti Delete Pesan|✅…|
+
 
 |  CREATOR  |                                           YES |
 | :---------------------------------------------: | :-----------: |
-| Sticker Maker|âœ…|
-| Sticker Gif Maker|âœ…|
-| Convert Sticker To Image|âœ…|
-| Harta Tahta|âœ…|
-| QR Code|âœ…|
-| Custom Harta Tahta|âœ…|
-| Glitchtext Maker|âœ…|
-| PornHub Logo Maker|âœ…|
-| Nulis Tugas|âœ…|
+| Sticker Maker|✅…|
+| Sticker Gif Maker|✅…|
+| Convert Sticker To Image|✅…|
+| Harta Tahta|✅…|
+| QR Code|✅…|
+| Custom Harta Tahta|✅…|
+| Glitchtext Maker|✅…|
+| PornHub Logo Maker|✅…|
+| Nulis Tugas|✅…|
+
+
 
 | DOWNLOADER | YES |
 | :-----------------: | :-------: |
-| YTMP4|âœ…|
-| YTMP3|âœ…|
-| YT PLAY|âœ…|
+| YTMP4|✅…|
+| YTMP3|✅…|
+| YT PLAY|✅…|
+
 
 | EDUCATION | YES |
 | :-----------------: | :-------: |
-| Brainly|âœ…|
-| Belajar|âœ…|
+| Brainly|✅…|
+| Belajar|✅…|
+
 
 | IMAGE | YES |
 | :-----------------: | :-------: |
-| Anime|âœ…|
-| Foto Cewek|âœ…|
+| Anime|✅…|
+| Foto Cewek|✅…|
+
 
 | GROUP | YES |
 | :-----------------: | :-------: |
-| AFK|âœ…|
-| Anti Link|âœ…|
-| Link Group|âœ…|
-| Promote Member|âœ…|
-| Demote Member|âœ…|
-| Hide Tag|âœ…|
-| Add Member|âœ…|
-| Kick Member|âœ…|
-| Welcome & Bye Group|âœ…|
+| AFK|✅…|
+| Anti Link|✅…|
+| Link Group|✅…|
+| Promote Member|✅…|
+| Demote Member|✅…|
+| Hide Tag|✅…|
+| Add Member|✅…|
+| Kick Member|✅…|
+| Welcome & Bye Group|✅…|
+| Delete Pesan|✅…|
+
 
 | RANDOM | YES |
 | :-----------------: | :-------: |
-| Quotes|âœ…|
-| Pantun|âœ…|
-| Kata Bijak|âœ…|
-| Puisi|âœ…|
-| Syair|âœ…|
+| Quotes|✅…|
+| Pantun|✅…|
+| Kata Bijak|✅…|
+| Puisi|✅…|
+| Syair|✅…|
+
 
 | FUN | YES |
 | :-----------------: | :-------: |
-| Math|âœ…|
-| Slot Machine|âœ…|
-| Dadu|âœ…|
-| Truth or Dare|âœ…|
-| IQ Test|âœ…|
-| Alay|âœ…|
-| Hilih|âœ…|
+| Math|✅…|
+| Slot Machine|✅…|
+| Dadu|✅…|
+| Truth or Dare|✅…|
+| IQ Test|✅…|
+| Alay|✅…|
+| Hilih|✅…|
+
 
 | OWNER | YES |
 | :-----------------: | :-------: |
-| Banned Member|âœ…|
-| Unbanned Member|âœ…|
-| Broadcast|âœ…|
-| Group Broadcast|âœ…|
-| Clear All Chat|âœ…|
+| Banned Member|✅…|
+| Unbanned Member|✅…|
+| Broadcast|✅…|
+| Group Broadcast|✅…|
+| Clear All Chat|✅…|
+
 
 | PREMIUM MENU | YES |
 | :-----------------: | :-------: |
-| Jadi Bot|âœ…|
-| Join GC|âœ…|
+| Jadi Bot|✅…|
+| Join GC|✅…|
+
 
  TENTANG BOT | YES |
 | :-----------------: | :-------: |
-| Info Bot|âœ…|
-| Status Bot|âœ…|
-| Donasi|âœ…|
-| Info Premium|âœ…|
+| Info Bot|✅…|
+| Status Bot|✅…|
+| Donasi|✅…|
+| Info Premium|✅…|
 
 * Masih Banyak Lagi
+
+
+
+
+
 
 ##### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
 ##### Recode : [`RC047`](https://GitHub.com/RC047) 
