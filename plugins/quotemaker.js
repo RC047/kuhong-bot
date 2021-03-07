@@ -19,7 +19,7 @@ Semoga suka yaa.
         .then(
           (ress) => {
             let buf = Buffer.from(ress, 'base64')
-            let apikey = ('ApiK3yTerhambar0007')
+            let apikey = ('ApiK3yTerhambar007')
 
      conn.sendFile(m.chat, buf, 'foto.jpg', str, m)
         })
