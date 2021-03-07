@@ -57,6 +57,7 @@ Recode SC : Nurutomo
 | Glitchtext Maker|✅…|
 | PornHub Logo Maker|✅…|
 | Nulis Tugas|✅…|
+| Quotes Maker |✅…|
 
 
 
@@ -76,7 +77,9 @@ Recode SC : Nurutomo
 | IMAGE | YES |
 | :-----------------: | :-------: |
 | Anime|✅…|
+| Kpop|✅…|
 | Foto Cewek|✅…|
+| Foto Cowok|✅…|
 
 
 | GROUP | YES |
@@ -100,6 +103,7 @@ Recode SC : Nurutomo
 | Kata Bijak|✅…|
 | Puisi|✅…|
 | Syair|✅…|
+| Faktaunik|✅…|
 
 
 | FUN | YES |
