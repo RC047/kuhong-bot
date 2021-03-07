@@ -46,7 +46,7 @@ Recode SC : Nurutomo
 | Anti Delete Pesan|✅…|
 
 
-| +18 MENU | YES |
+| +18 | YES |
 | :-----------------: | :-------: |
 | Kode Nuklir|✅…|
 | Random Hentai|✅…|
