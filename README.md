@@ -11,7 +11,7 @@ Recode SC : Nurutomo
 > pkg install unzip -y
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
-> npm i remove.bg && npm install
+> npm i cfonts && npm i spinnies && npm i crypto && npm install
 ```
 ###### Run
 ```bash
@@ -28,7 +28,7 @@ Recode SC : Nurutomo
 ```bash
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
-> npm i remove.bg && npm install
+> npm i cfonts && npm i spinnies && npm i crypto && npm install
 ```
 ###### Run
 ```bash
