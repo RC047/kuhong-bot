@@ -28,7 +28,6 @@ Recode SC : Nurutomo
 ```bash
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
-> unzip Kuhong-V4.zip
 > npm i remove.bg && npm install
 ```
 ###### Run
