@@ -1,6 +1,4 @@
 # Kuhong-V4
-Hanya Bot Biasa :v
-# Kuhong-V4
 Recode SC : Nurutomo
 
 ### FOR TERMUX USER
@@ -13,7 +11,6 @@ Recode SC : Nurutomo
 > pkg install unzip -y
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
-> unzip Kuhong-V4.zip
 > npm i remove.bg && npm install
 ```
 ###### Run
