@@ -46,6 +46,12 @@ Recode SC : Nurutomo
 | Anti Delete Pesan|✅…|
 
 
+| +18 MENU | YES |
+| :-----------------: | :-------: |
+| Kode Nuklir|✅…|
+| Random Hentai|✅…|
+
+
 |  CREATOR  |                                           YES |
 | :---------------------------------------------: | :-----------: |
 | Sticker Maker|✅…|
@@ -60,7 +66,6 @@ Recode SC : Nurutomo
 | Quotes Maker |✅…|
 
 
-
 | DOWNLOADER | YES |
 | :-----------------: | :-------: |
 | YTMP4|✅…|
@@ -70,9 +75,11 @@ Recode SC : Nurutomo
 | FACEBOOK|✅…|
 | TWITTER|✅…|
 
+
 | PRIMBON | YES |
 | :-----------------: | :-------: |
 | Artinama|✅…|
+
 
 | EDUCATION | YES |
 | :-----------------: | :-------: |
