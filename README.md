@@ -67,6 +67,9 @@ Recode SC : Nurutomo
 | YTMP3|✅…|
 | YT PLAY|✅…|
 
+| PRIMBON | YES |
+| :-----------------: | :-------: |
+| Artinama|✅…|
 
 | EDUCATION | YES |
 | :-----------------: | :-------: |
@@ -103,7 +106,7 @@ Recode SC : Nurutomo
 | Kata Bijak|✅…|
 | Puisi|✅…|
 | Syair|✅…|
-| Faktaunik|✅…|
+| Fakta Unik|✅…|
 
 
 | FUN | YES |
