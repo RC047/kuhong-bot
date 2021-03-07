@@ -1,6 +1,6 @@
 let fetch = require('node-fetch');
 let ftype = require('file-type');
-let { getBuffer, succes } = require('/data/data/com.termux/files/home/kuhong/lib/functions.js');
+let { getBuffer, succes } = require('/data/data/com.termux/files/home/Kuhong-V4/lib/functions.js');
 
 let handler = async(m, { conn, text }) => {
     let [t1, t2] = text.split `|`
