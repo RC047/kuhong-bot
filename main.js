@@ -18,7 +18,7 @@ let WAConnection = simple.WAConnection(_WAConnection)
 
 global.owner = ['62895337278647'] // Put your number here
 global.mods = [] // Want some help?
-global.prems = ['6282374181453','6283849163966'] // Premium user has unlimited limit
+global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -354,7 +354,7 @@ conn.on('close', () => {
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*RC047*_',
+    rowner: 'Perintah ini hanya dapat digunakan oleh _*Owner Kuhong!*_',
     owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
     mods: '_Perintah ini tidak diaktifkan oleh Owner!_',
     premium: 'Perintah ini hanya untuk member _*Premium*_ !',
@@ -462,5 +462,5 @@ Object.freeze(global.support)
 
 if (!global.support.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
 if (!global.support.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--emable-ibwebp while compiling ffmpeg)')
-if (!global.support.convert) conn.logger.warn('BOT POWERED BY RC047!')
+if (!global.support.convert) conn.logger.warn('BOT RECODED BY RC047!')
 
