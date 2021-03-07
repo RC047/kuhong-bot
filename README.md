@@ -8,7 +8,6 @@ Recode SC : Nurutomo
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> pkg install unzip -y
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
 > npm i cfonts && npm i spinnies && npm i crypto && npm install
