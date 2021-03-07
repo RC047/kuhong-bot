@@ -66,6 +66,9 @@ Recode SC : Nurutomo
 | YTMP4|✅…|
 | YTMP3|✅…|
 | YT PLAY|✅…|
+| INSTAGRAM|✅…|
+| FACEBOOK|✅…|
+| TWITTER|✅…|
 
 | PRIMBON | YES |
 | :-----------------: | :-------: |
@@ -143,6 +146,7 @@ Recode SC : Nurutomo
 | Donasi|✅…|
 | Info Premium|✅…|
 
+
 * Masih Banyak Lagi
 
 
@@ -151,4 +155,4 @@ Recode SC : Nurutomo
 
 
 ##### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
-##### Recode : [`RC047`](https://GitHub.com/RC047) 
+##### Recoded : [`RC047`](https://GitHub.com/RC047) 
