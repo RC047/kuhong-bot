@@ -1,6 +1,9 @@
 # Kuhong-V4
 Recode SC : Nurutomo
 
+# NOTE :
+JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
+
 ### FOR TERMUX USER
 ```bash
 > pkg update && pkg upgrade
