@@ -17,7 +17,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 ```
 ###### Run
 ```bash
-> node . [<session name>] (session name is optional)
+> node index.js
 ```
 
 ---------
@@ -34,7 +34,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 ```
 ###### Run
 ```bash
-> node index.js
+> node . [<session name>] (session name is optional)
 ```
 --------------
 
