@@ -150,6 +150,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
  TENTANG BOT | YES |
 | :-----------------: | :-------: |
 | Report|✅…|
+| Request Fitur|✅…|
 | Info Bot|✅…|
 | Status Bot|✅…|
 | Donasi|✅…|
