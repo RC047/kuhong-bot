@@ -81,6 +81,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 | PRIMBON | YES |
 | :-----------------: | :-------: |
 | Artinama|✅…|
+| Info Zodiak|✅…|
 
 
 | EDUCATION | YES |
