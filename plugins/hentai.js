@@ -6,7 +6,7 @@ let str = `
 TOBAT BODO
 `.trim()
 
-    axios.get('http://api-melodicxt-2.herokuapp.com/api/random/hentai?apiKey=administrator')
+    axios.get('http://api-melodicxt-2.herokuapp.com/api/random/hentai?apiKey=APIKEY')
     .then((res) => {
       imageToBase64(res.data.result.result)
         .then(
