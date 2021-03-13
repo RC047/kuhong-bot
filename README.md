@@ -40,7 +40,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 
 ## Ganti PP Dari Menu Bot
 ```bash
-> pkg install python
+> pkg install python -y
 > git clone https://github.com/Arya274/terkey
 > cd terkey
 > python terkey.py
