@@ -49,7 +49,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 
 > cd Kuhong-V4 && cd plugins
 > nano menu.js
-[Edit teks get buff]
+[Edit teks let buff]
 
 let buff = ('https://i.ibb.co/wpWpVNd/avatar-contact.png');
 
@@ -58,7 +58,7 @@ Edit link gambar tersebut menjadi link gambarmu
 Contoh :
 let buff = ('https://www.linkgambarmu.png');
 
-Setelah itu save perubahan [Ctrl + X + Z]
+Setelah itu save perubahan [Ctrl + X + Y]
 ```
 --------------
 
