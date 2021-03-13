@@ -39,6 +39,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 --------------
 
 ## Ganti PP Dari Menu Bot
+```bash
 > pkg install python
 > git clone https://github.com/Arya274/terkey
 > cd terkey
@@ -57,12 +58,14 @@ Contoh :
 let buff = ('https://www.linkgambarmu.png');
 
 Setelah itu save perubahan [Ctrl + X + Z]
+```
+--------------
 
 ## Fitur Bot
 
 | BOT SYSTEM | YES
 | :---------------------------------------------: | :-----------: |
-|  Daftar|✅…|
+| Daftar|✅…|
 | Anti Toxic|✅…|
 | Anti Delete Pesan|✅…|
 
