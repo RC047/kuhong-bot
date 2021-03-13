@@ -38,6 +38,25 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!
 ```
 --------------
 
+## Ganti PP Dari Menu Bot
+> pkg install python
+> git clone https://github.com/Arya274/terkey
+> cd terkey
+> python terkey.py
+[Keluar dari Termux lalu masuk lagi]
+
+> cd Kuhong-V4 && cd plugins
+> nano menu.js
+[Edit teks get buff]
+
+let buff = ('https://i.ibb.co/wpWpVNd/avatar-contact.png');
+
+Edit link gambar tersebut menjadi link gambarmu
+
+Contoh :
+let buff = ('https://www.linkgambarmu.png');
+
+Setelah itu save perubahan [Ctrl + X + Z]
 
 ## Fitur Bot
 
