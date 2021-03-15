@@ -134,11 +134,11 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-            let buff = ('https://i.ibb.co/wpWpVNd/avatar-contact.png');
+            let buff = ('https://yt3.ggpht.com/ytc/AAUvwngcZGn6WEZ5hhDcbP7m_nNva3noclM9w-7WbjGCFQ=s88-c-k-c0xffffffff-no-rj-mo');
             let voss = await fetch(buff)
 			let vuss = await ftype.fromStream(voss.body)
 			if (vuss !== undefined) {
-    conn.sendFile(m.chat, await getBuffer(buff), 'foto.jpg', text.trim(), m)
+    conn.sendFile(m.chat, await getBuffer(buff), 'Kuhong.jpg', text.trim(), m)
 }  } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
