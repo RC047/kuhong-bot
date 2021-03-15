@@ -1,4 +1,4 @@
-console.log('Starting...')
+console.log('Bot Recoded By RC047')
 let { spawn } = require('child_process')
 let path = require('path')
 const CFonts  = require('cfonts')
@@ -7,7 +7,7 @@ CFonts.say('Rendy Gans', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say('\'𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃\' @rendycraft047', {
+CFonts.say('@rendycraft047', {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
