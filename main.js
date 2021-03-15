@@ -462,5 +462,5 @@ Object.freeze(global.support)
 
 if (!global.support.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
 if (!global.support.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--emable-ibwebp while compiling ffmpeg)')
-if (!global.support.convert) conn.logger.warn('BOT RECODED BY RC047!')
+if (!global.support.convert) conn.logger.warn('CREDIT RC047!')
 
