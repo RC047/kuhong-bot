@@ -85,6 +85,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │• Waktu : *%time*
 │• Online : *%uptime*
 │• Total User : *%totalreg nomor*
+│• Prefix : *Multi Prefix*
 │
 │• YouTube : RC047
 │• Instagram : @rendycraft047
