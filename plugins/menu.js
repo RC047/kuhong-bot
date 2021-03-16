@@ -134,7 +134,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-            let buff = ('https://yt3.ggpht.com/ytc/AAUvwnjdSxDskAPoqr8k7bkH5_fQxpPjxn-0a2j2cLq1Zw=s800-c-k-c0xffffffff-no-rj-mo');
+            let buff = ('https://i.ibb.co/SwZpwXL/Credit-RC047.jpg');
             let voss = await fetch(buff)
 			let vuss = await ftype.fromStream(voss.body)
 			if (vuss !== undefined) {
