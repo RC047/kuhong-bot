@@ -8,7 +8,7 @@ let handler = async(m, { conn, args, usedPrefix }) => {
         conn.reply(m.chat, `*KODE GIFT TIDAK VALID!*\n\nSilahkan hubungi Owner untuk beli kode gift yang valid dengan cara ketik !buygift atau dapatkan kode gift secara gratis dengan cara anda berdaftar!`, m)
     }
 }
-handler.help = ['gift <kode> (-100 limit)']
+handler.help = ['gift <kode>']
 handler.tags = ['hadiah']
 handler.command = /^(gift)$/i
 
