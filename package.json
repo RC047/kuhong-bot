@@ -1,6 +1,6 @@
 {
   "name": "wabot-aq",
-  "version": "4.5",
+  "version": "4.5.1",
   "description": "Made By RendyCraft047",
   "depecrated": false,
   "main": "index.js",
@@ -19,15 +19,15 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "homepage": "https://github.com/RC047/Kuhong-V4",
   "author": {
-    "name": "Nurutomo"
+    "name": "RC047"
   },
   "repository": {
-    "url": "https://github.com/Nurutomo/wabot-aq.git"
+    "url": "https://github.com/RC047/Kuhong-V4.git"
   },
   "bugs": {
-    "url": "https://github.com/Nurutomo/wabot-aq/issues"
+    "url": "https://github.com/RC047/Kuhong-V4/issues"
   },
   "license": "GPL3",
   "dependencies": {
