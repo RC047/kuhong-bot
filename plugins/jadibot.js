@@ -2,7 +2,7 @@ let { WAConnection: _WAConnection, MessageType } = require('@adiwajshing/baileys
 let WAConnection = require('../lib/simple').WAConnection(_WAConnection)
 let qrcode = require('qrcode')
 
-if (global.conns instanceof Array) console.log()// for (let i of global.conns) global.conns[i] && global.conns[i].user ? global.conns[i].close().then(() => delete global.conns[id] && global.conns.splice(i, 1)).catch(global.conn.logger.error) : delete global.conns[i] && global.conns.splice(i, 1)
+if (global.conns instanceof Array) console.log()// for (let i of global.conns) global.conns[i] && global.conns[i].user ? global.conns[i].close().then(() => delete global.conns[id] && global.conns.splice(i, 1)).catch(global.conn.logger.error) : delete global.conns[i] &&                                                                     >
 else global.conns = []
 
 let handler  = async (m, { conn, args, usedPrefix, command }) => {
@@ -19,19 +19,24 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
       auth = true
     }
     conn.on('qr', async qr => {
-      let scan = await parent.sendFile(m.chat, await qrcode.toDataURL(qr, { scale: 8 }), 'qrcode.png', 'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini \nQR Expired dalam 20 detik', m)
+    await m.reply(`getting data from\n('/data/data/com.termux/files/usr/bin/node')`)
+    await m.reply(`getting data from\n('/data/data/com.termux/files/home/kuhong/main.js')`)
+    await m.reply('loading authentication credentials from session.data.json')
+    await m.reply('connected to WhatsApp Web server, authenticating via takeover')
+      let scan = await parent.sendFile(m.chat, await qrcode.toDataURL(qr, { scale: 8 }), 'qrcode.png', 'SCAN KODE QRMU\n\n~Kuhong Bot', m)
       setTimeout(() => {
         parent.deleteMessage(m.chat, scan.key)
       }, 30000)
     })
     conn.once('connection-validated', user => {
-      parent.reply(m.chat, 'Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2), m)
+      parent.reply(m.chat, 'Berhasil tersambung dengan WhatsAppmu.\n*NOTE : Ini cuma numpang!*\n' + JSON.stringify(user, null, 2), m)
     })
     conn.welcome = global.conn.welcome
     conn.bye = global.conn.bye
     conn.on('group-add', global.conn.onAdd)
     conn.on('group-leave', global.conn.onLeave)
     conn.on('message-new', global.conn.handler)
+    conn.on('message-delete', global.conn.onDelete)
     conn.regenerateQRIntervalMs = null
     conn.connect().then(async ({user}) => {
       if (auth) return
@@ -43,9 +48,21 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
       conn.close()
       delete global.conns[id]
     }, 60000)
-    conn.on('close', conn.logger.info)
+    conn.on('close', () => {
+      setTimeout(async () => {
+        try {
+          if (conn.state != 'close') return
+          if (conn.user && conn.user.jid)
+            parent.sendMessage(conn.user.jid, `Koneksi terputus...`, MessageType.extendedText)
+          let i = global.conns.indexOf(conn)
+          if (i < 0) return
+          delete global.conns[i]
+          global.conns.splice(i, 1)
+        } catch (e) { conn.logger.error(e) }
+      }, 30000)
+    })
     global.conns.push(conn)
-  } else throw 'Bot ini cuma numpang!\n\nKlik disini jika anda ingin jadi Bot\nhttps://wa.me/' + global.conn.user.jid.split`@`[0] + '?text=!jadibot'
+  } else throw 'Bot ini cuma numpang!\n\nKlik Disini jika ingin jadi Bot :\nhttps://wa.me/' + global.conn.user.jid.split`@`[0] + '?text=${usedPrefix}jadibot'
 }
 handler.help = ['jadibot']
 handler.tags = ['premium']
@@ -60,7 +77,6 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.limit = false
+handler.limit = 5
 
 module.exports = handler
-
