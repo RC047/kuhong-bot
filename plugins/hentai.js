@@ -1,7 +1,7 @@
 let imageToBase64 = require('image-to-base64');
 let axios = require("axios");
 let handler = async(m, { conn, text }) => {
-  await m.reply('-9 limit')
+  await m.reply('Searching...')
 let str = `
 TOBAT BODO
 `.trim()
@@ -14,11 +14,10 @@ TOBAT BODO
             let buf = Buffer.from(ress, 'base64')
 
      conn.sendFile(m.chat, buf, 'foto.jpg', str, m)
-    global.DATABASE._data.users[m.sender].limit -= 9
         })
     })
 }
-handler.help = ['hentai -10']
+handler.help = ['hentai']
 handler.tags = ['dewasa']
 handler.command = /^(hentai)$/i
 handler.owner = false
@@ -31,6 +30,6 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.limit = true
+handler.limit = 10
 
 module.exports = handler
