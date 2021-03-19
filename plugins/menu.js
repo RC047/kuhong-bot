@@ -135,11 +135,11 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-            let buff = ('https://i.ibb.co/SwZpwXL/Credit-RC047.jpg');
+            let buff = ('https://i.ibb.co/5jGVTx7/YOUR-PP.png');
             let voss = await fetch(buff)
 			let vuss = await ftype.fromStream(voss.body)
 			if (vuss !== undefined) {
-    conn.sendFile(m.chat, await getBuffer(buff), 'Kuhong.jpg', text.trim(), m)
+    conn.sendFile(m.chat, await getBuffer(buff), 'KUHONG.jpg', text.trim(), await conn.fakeReply('0@s.whatsapp.net', '*BY RENDY GANS*'))
 }  } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
