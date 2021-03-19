@@ -51,7 +51,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 > nano menu.js
 [Edit teks let buff]
 
-let buff = ('https://i.ibb.co/wpWpVNd/avatar-contact.png');
+let buff = ('https://i.ibb.co/5jGVTx7/YOUR-PP.png');
 
 Edit link gambar tersebut menjadi link gambarmu
 
