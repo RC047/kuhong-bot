@@ -2,7 +2,7 @@ let { WAConnection: _WAConnection, WA_MESSAGE_STUB_TYPES } = require('@adiwajshi
 let { generate } = require('qrcode-terminal')
 let qrcode = require('qrcode')
 let simple = require('./lib/simple')
-//  let logs = require('./lib/logs')
+let logs = require('./lib/logs')
 let yargs = require('yargs/yargs')
 let syntaxerror = require('syntax-error')
 let fetch = require('node-fetch')
@@ -15,6 +15,7 @@ let Readline = require('readline')
 let rl = Readline.createInterface(process.stdin, process.stdout)
 let WAConnection = simple.WAConnection(_WAConnection)
 
+// RECODE LAGI IZIN LAGI!!!
 
 global.owner = ['62895337278647'] // Put your number here
 global.mods = [] // Want some help?
