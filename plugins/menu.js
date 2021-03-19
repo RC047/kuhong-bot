@@ -4,8 +4,8 @@ let { getBuffer, succes } = require('/data/data/com.termux/files/home/Kuhong-V4/
 let fs = require ('fs')
 let path = require('path')
 let handler  = async (m, { conn, usedPrefix: _p }) => {
+await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
   try {
-
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let exp = global.DATABASE.data.users[m.sender].exp
     let limit = global.DATABASE.data.users[m.sender].limit
@@ -112,7 +112,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     let header = conn.menu.header || '╭─「 %category 」'
     let body   = conn.menu.body   || '│• %cmd%islimit'
     let footer = conn.menu.footer || '╰────\n'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Bot Powered By https://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Bot Asli :\nhttps://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
@@ -139,7 +139,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
             let voss = await fetch(buff)
 			let vuss = await ftype.fromStream(voss.body)
 			if (vuss !== undefined) {
-    conn.sendFile(m.chat, await getBuffer(buff), 'KUHONG.jpg', text.trim(), await conn.fakeReply('0@s.whatsapp.net', '*BY RENDY GANS*'))
+    conn.sendFile(m.chat, await getBuffer(buff), 'KUHONG.jpg', text.trim(), m)
 }  } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
