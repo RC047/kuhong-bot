@@ -1,11 +1,17 @@
 let fetch = require('node-fetch');
 let ftype = require('file-type');
-let { getBuffer, succes } = require('/data/data/com.termux/files/home/Kuhong-V4/lib/functions.js');
+let { getBuffer } = require('/data/data/com.termux/files/home/kuhong/lib/functions.js');
+let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 let fs = require ('fs')
 let path = require('path')
+
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
+
+  await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
+  let RendyGans = './src/avatar_contact.png'
+
   try {
+    RendyGans = await conn.getProfilePicture(conn.user.jid)
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let exp = global.DATABASE.data.users[m.sender].exp
     let limit = global.DATABASE.data.users[m.sender].limit
@@ -33,24 +39,25 @@ await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*'
       'daftar': 'Daftar',
       'xp': 'Exp & Limit',
       'hadiah': 'Hadiah',
+      'group': 'Group Menu',
       'sticker': 'Creator Menu',
+      'editor': 'Editor Menu',
       'dewasa': '18+ Menu',
       'game': 'Fun Menu',
-      'image': 'Images Menu',
+      'video': 'Video Menu',
+      'image': 'Image Menu',
+      'sound': 'Sound Menu',
       'quotes': 'Random Menu',
       'primbon': 'Primbon Menu',
       'belajar': 'Education Menu',
       'music': 'Music Menu',
       'simi': 'Simsimi Menu',
       'kerang': 'Kerang Menu',
-      'tools': 'Tools Menu',
-      'internet': 'Search Menu',
       'downloader': 'Downloader Menu',
-      'admin': 'Admin Menu',
-      'group': 'Member Menu',
+      'tools': 'Tools Menu',
       'premium': 'Premium Menu',
       'owner': 'Owner Menu',
-      'host': 'Host',
+      'host': 'Host Menu',
       'info': 'Information',
     }
     for (let plugin of Object.values(global.plugins))
@@ -84,12 +91,12 @@ await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*'
 │• Tanggal : *%date*
 │• Waktu : *%time*
 │• Online : *%uptime*
-│• Total User : *%totalreg nomor*
-│• Prefix : *Multi Prefix*
+│• Total User : *%totalreg Nomor*
+│• Prefix : *MultiPrefix*
 │
-│• YouTube : RC047
-│• Instagram : @rendycraft047
-│• FaceBook : RendyCraft
+│• YouTube : *RC047*
+│• Instagram : *@rendycraft047*
+│• FaceBook : *RendyCraft*
 │• GitHub :
 │https://github.com/RC047/Kuhong-V4
 │• Nomor Bot :
@@ -97,12 +104,13 @@ await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*'
 ╰────
 
 ╭─「 Jadwal Aktif 」
-│• 08:00 - 22:00
+│• 08:00 - 21:00
 ╰────
 
-╭─「 Rules Bot 」
-│• Telpon/VC=BLOK/BAN
-│• Spam=BLOK/BAN
+╭─「 Changelog 」
+│• Add AntiVirtex
+│• Update Display Menu
+│• Bug Fixes
 ╰────
 
 ╭─「 Join Group 」
@@ -112,7 +120,7 @@ await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*'
     let header = conn.menu.header || '╭─「 %category 」'
     let body   = conn.menu.body   || '│• %cmd%islimit'
     let footer = conn.menu.footer || '╰────\n'
-    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Bot Asli :\nhttps://wa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
+    let after  = conn.menu.after  || (conn.user.jid == global.conn.user.jid ? '' : `Bot Asli :\nwa.me/${global.conn.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\``
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
@@ -135,12 +143,9 @@ await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*'
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-            let buff = ('https://i.ibb.co/5jGVTx7/YOUR-PP.png');
-            let voss = await fetch(buff)
-			let vuss = await ftype.fromStream(voss.body)
-			if (vuss !== undefined) {
-    conn.sendFile(m.chat, await getBuffer(buff), 'KUHONG.jpg', text.trim(), m)
-}  } catch (e) {
+
+  conn.sendFile(m.chat, RendyGans, 'RendyGans.jpg', text.trim(), m)
+
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
@@ -159,6 +164,7 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.exp = 5
+handler.register = true
 
 module.exports = handler
 
