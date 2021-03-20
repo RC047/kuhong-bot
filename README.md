@@ -38,30 +38,6 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 ```
 --------------
 
-## Ganti PP Dari Menu Bot
-```bash
-> pkg install python -y
-> pkg install nano -y
-> git clone https://github.com/Arya274/terkey
-> cd terkey
-> python terkey.py
-[Keluar dari Termux lalu masuk lagi]
-
-> cd Kuhong-V4 && cd plugins
-> nano menu.js
-[Edit teks let buff]
-
-let buff = ('https://i.ibb.co/5jGVTx7/YOUR-PP.png');
-
-Edit link gambar tersebut menjadi link gambarmu
-
-Contoh :
-let buff = ('https://www.linkgambarmu.png');
-
-Setelah itu save perubahan [Ctrl + X + Y]
-```
---------------
-
 ## Fitur Bot
 
 | BOT SYSTEM | YES
