@@ -19,7 +19,6 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 ```bash
 > node index.js
 ```
-
 ---------
 
 ### FOR WINDOWS/VPS/RDP USER
