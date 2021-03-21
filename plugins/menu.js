@@ -146,7 +146,8 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 
   conn.sendFile(m.chat, RendyGans, 'RendyGans.jpg', text.trim(), m)
 
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+} catch (e) {
+  conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
 }
