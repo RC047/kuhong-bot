@@ -1,6 +1,6 @@
 let fetch = require('node-fetch');
 let ftype = require('file-type');
-let { getBuffer } = require('/data/data/com.termux/files/home/kuhong/lib/functions.js');
+let { getBuffer } = require('/data/data/com.termux/files/home/Kuhong-V4/lib/functions.js');
 let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 let fs = require ('fs')
 let path = require('path')
