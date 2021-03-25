@@ -1,25 +1,18 @@
-const { MessageType } = require('@adiwajshing/baileys')
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 
-let handler = async(m, { conn, text }) => {
-    if (!text) return conn.reply(m.chat, 'Silahkan masukan link groupmu', m)
-    if (text > 500) return conn.reply(m.chat, 'Link Kepanjangan!', m)
-    var nomor = m.sender
-    const teks1 = `*[ MINTA JOIN ]*\nNomor : wa.me/${nomor.split("@s.whatsapp.net")[0]}\nLink GC : ${text}`
-    conn.sendMessage('62895337278647@s.whatsapp.net', teks1, MessageType.text)
-    conn.reply(m.chat, 'Terimakasih!\n\nBot akan masuk ke Grup anda setelah dikonfirmasi oleh Owner Bot', m)
+let handler = async (m, { conn, text }) => {
+    let [_, code] = text.match(linkRegex) || []
+    if (!code) throw 'Link invalid'
+    let res = await conn.query({
+        json: ["action", "invite", code]
+    })
+    if (res.status !== 200) throw res
+    m.reply(`Berhasil join grup ${res.gid}`)
 }
 handler.help = ['join <link gc>']
 handler.tags = ['premium']
-handler.command = /^(join)$/i
-handler.owner = false
-handler.mods = false
+handler.command = /^join$/i
+
 handler.premium = true
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
 
 module.exports = handler
