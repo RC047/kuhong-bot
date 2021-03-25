@@ -42,6 +42,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | BOT SYSTEM | YES
 | :---------------------------------------------: | :-----------: |
 | Daftar|✅…|
+| Anti Link|✅…|
 | Anti Toxic|✅…|
 | Anti Delete Pesan|✅…|
 
