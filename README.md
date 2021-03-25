@@ -58,6 +58,8 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | Sticker Gif Maker|✅…|
 | Convert Sticker To Image|✅…|
 | Harta Tahta|✅…|
+| TextPro Maker|✅…|
+| Photooxy Maker|✅…|
 | QR Code|✅…|
 | Custom Harta Tahta|✅…|
 | Glitchtext Maker|✅…|
