@@ -1,6 +1,5 @@
 let fetch = require('node-fetch');
 let ftype = require('file-type');
-let { getBuffer, succes } = require('/data/data/com.termux/files/home/Kuhong-V4/lib/functions.js');
 
 let handler = async(m, { conn, text }) => {
     let [t1, t2] = text.split `|`
@@ -19,12 +18,9 @@ Buat Beli Apikey : 10K
   await m.reply('Sedang membuat...')
 
             let apikey = ('CPt01blLPQ12Zxt51n0Gf18jQqwEr3Vr')
-            let buff = ('https://i.ibb.co/25FH6NH/IMG-20210307-WA0961.jpg');
-            let voss = await fetch(buff)
-			let vuss = await ftype.fromStream(voss.body)
-			if (vuss !== undefined) {
+            let buff = await (await fetch('https://i.ibb.co/25FH6NH/IMG-20210307-WA0961.jpg').buffer()
 
-     conn.sendFile(m.chat, await getBuffer(buff), 'foto.jpg', str, m)
+     conn.sendFile(m.chat, buff, 'foto.jpg', str, m)
      }
 }
 handler.help = ['phlogo <teks|teks>']
