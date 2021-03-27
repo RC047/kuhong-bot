@@ -4,12 +4,14 @@ let { getBuffer } = require('/data/data/com.termux/files/home/Kuhong-V4/lib/func
 let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 let fs = require ('fs')
 let path = require('path')
-
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-
   await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
   let RendyGans = './src/avatar_contact.png'
-
+  let nomor = 'wa.me/62895337278647'
+  let sosmed = 'RC047'
+  let jadwal = '24 Jam'
+  let github = 'https://github.com/RC047/Kuhong-V4'
+  let linkgrup = 'https://chat.whatsapp.com/EY0BzXwdV1PKAQQggsDzrU'
   try {
     RendyGans = await conn.getProfilePicture(conn.user.jid)
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
@@ -42,6 +44,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'group': 'Group Menu',
       'sticker': 'Creator Menu',
       'game': 'Fun Menu',
+      'spammer': 'Spammer Menu',
       'image': 'Image Menu',
       'sound': 'Sound Menu',
       'quotes': 'Random Menu',
@@ -85,33 +88,33 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │• Limit :  *%limit Limit*
 │
 │• Hari : *%week*
+│• Weton : *%weton*
 │• Tanggal : *%date*
 │• Waktu : *%time*
 │• Online : *%uptime*
 │• Total User : *%totalreg Nomor*
 │• Prefix : *MultiPrefix*
 │
-│• YouTube : *RC047*
-│• Instagram : *@rendycraft047*
-│• FaceBook : *RendyCraft*
+│• YouTube : *${sosmed}*
+│• Instagram : *@{sosmed}*
+│• FaceBook : *{sosmed}*
 │• GitHub :
-│https://github.com/RC047/Kuhong-V4
+│${github}
 │• Nomor Bot :
-│wa.me/62895337278647
+│${nomor}
 ╰────
 
 ╭─「 Jadwal Aktif 」
-│• 08:00 - 21:00
+│• ${jadwal}
 ╰────
 
 ╭─「 Changelog 」
-│• Add AntiVirtex
-│• Update Display Menu
-│• Bug Fixes
+│• Add Photooxy
+│• Add Spammer Menu
 ╰────
 
 ╭─「 Join Group 」
-│https://chat.whatsapp.com/EY0BzXwdV1PKAQQggsDzrU
+│${linkgroup}
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
@@ -140,11 +143,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-
   conn.sendFile(m.chat, RendyGans, 'RendyGans.jpg', text.trim(), m)
-
 } catch (e) {
-  conn.reply(m.chat, 'Maaf, menu sedang error', m)
+  conn.reply(m.chat, 'Menu Sedang Erorr!', m)
     throw e
   }
 }
