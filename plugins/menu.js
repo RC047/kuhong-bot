@@ -109,8 +109,10 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 ╰────
 
 ╭─「 Changelog 」
-│• Add Photooxy
 │• Add Spammer Menu
+│• Add Ephoto360 Maker
+│• Add NoBG Maker
+│• Update StickerGif Maker
 ╰────
 
 ╭─「 Join Group 」
