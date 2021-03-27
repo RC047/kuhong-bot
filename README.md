@@ -61,6 +61,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | Harta Tahta|✅…|
 | TextPro Maker|✅…|
 | Photooxy Maker|✅…|
+| Ephoto360 Maker|✅…|
 | QR Code|✅…|
 | Custom Harta Tahta|✅…|
 | Glitchtext Maker|✅…|
@@ -84,6 +85,15 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | Artinama|✅…|
 | Info Zodiak|✅…|
 
+
+| SPAMMER | YES |
+| :-----------------: | :-------: |
+| PizzaHut|✅…|
+| Olx|✅…|
+| DanaCinta|✅…|
+| SpamCall|✅…|
+| SpamSMS|✅…|
+| SpamWA|✅…|
 
 | EDUCATION | YES |
 | :-----------------: | :-------: |
