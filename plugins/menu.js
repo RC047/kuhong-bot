@@ -11,7 +11,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
   let sosmed = 'RC047'
   let jadwal = '24 Jam'
   let github = 'https://github.com/RC047/Kuhong-V4'
-  let linkgrup = 'https://chat.whatsapp.com/EY0BzXwdV1PKAQQggsDzrU'
+  let linkgroup = 'https://chat.whatsapp.com/EY0BzXwdV1PKAQQggsDzrU'
   try {
     RendyGans = await conn.getProfilePicture(conn.user.jid)
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
