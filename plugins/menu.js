@@ -96,8 +96,8 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │• Prefix : *MultiPrefix*
 │
 │• YouTube : *${sosmed}*
-│• Instagram : *@{sosmed}*
-│• FaceBook : *{sosmed}*
+│• Instagram : *@${sosmed}*
+│• FaceBook : *${sosmed}*
 │• GitHub :
 │${github}
 │• Nomor Bot :
