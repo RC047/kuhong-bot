@@ -43,6 +43,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | :---------------------------------------------: | :-----------: |
 | Daftar|✅…|
 | Anti Link|✅…|
+| Anti Virtex|✅…|
 | Anti Toxic|✅…|
 | Anti Delete Pesan|✅…|
 
