@@ -90,7 +90,6 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | SPAMMER | YES |
 | :-----------------: | :-------: |
 | PizzaHut|✅…|
-| Olx|✅…|
 | DanaCinta|✅…|
 | SpamCall|✅…|
 | SpamSMS|✅…|
