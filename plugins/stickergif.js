@@ -1,32 +1,97 @@
-const fetch = require('node-fetch')
 const fs = require('fs')
-const path = require('path')
-const { spawn } = require('child_process')
-const FormData = require('form-data')
+const ffmpeg = require('fluent-ffmpeg')
 const { MessageType } = require('@adiwajshing/baileys')
+const { removeBackgroundFromImageFile } = require('remove.bg')
+const { exec } = require('child_process')
 
-let handler  = async (m, { conn, args, usedPrefix }) => {
-  await m.reply('Sedang Membuat...\nMohon tunggu sekita 1 menit.')
-  let stiker = false
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
-    let q = m.quoted ? { message: { [m.quoted.mtype]: m.quoted }} : m
-    if (/video/.test((m.quoted ? m.quoted : m.msg).mimetype || '')) {
-      let img = await conn.downloadM(q)
-      if (!img) throw img
-      stiker = await sticker2(img)
-    } else if (args[0]) stiker = await sticker2(false, args[0])
-      else {
-      m.reply(`Kirim Perintah ${usedPrefix}stikergif dengan caption di video/gif atau reply video/gif yang tersedia.`)
+
+  await m.reply('Sedang Membuat...\nMohon tunggu sekitar 1 menit.')
+    const type = Object.keys(m.message)[0]
+    const content = JSON.stringify(m.message)
+    const isMedia = (type === 'imageMessage' || type === 'videoMessage')
+    const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
+    const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
+    if ((isMedia && !m.message.videoMessage || isQuotedImage) && args.length == 0) {
+      const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(m).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : m
+      const media = await conn.downloadAndSaveMediaMessage(encmedia)
+      const ran = getRandom('.webp')
+      await ffmpeg(`./${media}`)
+        .input(media)
+        .on('start', function (cmd) {
+          console.log(`Started : ${cmd}`)
+        })
+        .on('error', function (e) {
+          console.log(`Error : ${e}`)
+          fs.unlinkSync(media)
+          m.reply('Ada yang Error!')
+        })
+        .on('end', function () {
+          console.log('Finish')
+          buff = fs.readFileSync(ran)
+          conn.sendMessage(m.chat, buff, MessageType.sticker, { quoted: m })
+          fs.unlinkSync(media)
+          fs.unlinkSync(ran)
+        })
+        .addOutputOptions([`-vcodec`, `libwebp`, `-vf`, `scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
+        .toFormat('webp')
+        .save(ran)
+    } else if ((isMedia && m.message.videoMessage.seconds < 11 || isQuotedVideo && m.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
+      const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(m).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : m
+      const media = await conn.downloadAndSaveMediaMessage(encmedia)
+      const ran = getRandom('.webp')
+      await ffmpeg(`./${media}`)
+        .inputFormat(media.split('.')[1])
+        .on('start', function (cmd) {
+          console.log(`Started : ${cmd}`)
+        })
+        .on('error', function (e) {
+          console.log(`Error : ${e}`)
+          fs.unlinkSync(media)
+          tipe = media.endsWith('.mp4') ? 'video' : 'gif'
+          m.reply(`Gagal, pada saat mengkonversi ${tipe} ke stikergif, pastikan berdurasi dibawah 10 detik`)
+        })
+        .on('end', function () {
+          console.log('Finish')
+          buff = fs.readFileSync(ran)
+          conn.sendMessage(m.chat, buff, MessageType.sticker, { quoted: m })
+          fs.unlinkSync(media)
+          fs.unlinkSync(ran)
+        })
+        .addOutputOptions([`-vcodec`, `libwebp`, `-vf`, `scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
+        .toFormat('webp')
+        .save(ran)
+    } else if ((isMedia && !m.message.videoMessage || !isQuotedImage || isQuotedImage) && text == 'nobg') {
+      const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(m).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : m
+      const media = await conn.downloadAndSaveMediaMessage(encmedia)
+      ranw = getRandom('.webp')
+      ranp = getRandom('.png')
+      await removeBackgroundFromImageFile({ path: media, apiKey: "ku7CybpBNXacsoWMyeZeLGQq", size: 'auto', type: 'auto', ranp }).then(res => {
+        fs.unlinkSync(media)
+        let buffer = Buffer.from(res.base64img, 'base64')
+        fs.writeFileSync(ranp, buffer, (e) => {
+          if (e) return m.reply('Gagal, Terjadi kesalahan, silahkan coba beberapa saat lagi.')
+        })
+        exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (e) => {
+          fs.unlinkSync(ranp)
+          if (e) return m.reply('Ada yang Error!')
+          buff = fs.readFileSync(ranw)
+          conn.sendMessage(m.chat, buff, MessageType.sticker, { quoted: m })
+        })
+        // fs.unlinkSync() wah gatau gmn cara ngapusnya :/
+      })
+              await m.reply('Nihh Stikernya')
+    } else {
+      m.reply(`Kirim Perintah ${usedPrefix + command} dengan caption di media video/gambar atau reply media video/gambar yang tersedia.`)
     }
-  } finally {
-    if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
-      quoted: m
-    })
+  } catch (e) {
+    console.log(e)
   }
 }
-handler.help = ['stickergif','sgif']
+handler.help = ['stickergif', 'sgif', 'sticker2', 'nobg']
 handler.tags = ['sticker']
-handler.command = /^stic?kergif|sgif$/i
+handler.command = /^(stic?kergif|sgif|stic?ker2|nobg)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -41,94 +106,6 @@ handler.limit = true
 
 module.exports = handler
 
-let tmp = path.join(__dirname, '../tmp')
-function sticker2(img, url) {
-  return new Promise(async (resolve, reject) => {
-    try {
-      if (url) {
-        let res = await fetch(url)
-        img = await res.buffer()
-      }
-      let inp = path.join(tmp, +new Date + '.mp4')
-      let png = path.join(tmp, +new Date + '.gif')
-      let out = path.join(tmp, +new Date + '.webp')
-      fs.writeFileSync(inp, img)
-      spawn('ffmpeg', [
-        '-y',
-        '-i', inp,
-        '-vf', 'scale=512:512:flags=lanczos:force_original_aspect_ratio=decrease,format=rgba,pad=512:512:(ow-iw)/2:(oh-ih)/2:color=#00000000,setsar=1',
-        png
-      ])
-      .on('error', reject)
-      .on('close', () => {
-        fs.unlinkSync(inp)
-        spawn('convert', [png, out])
-        .on('error', reject)
-        .on('close', () => {
-          fs.unlinkSync(png)
-          resolve(fs.readFileSync(out))
-          fs.unlinkSync(out)
-        })
-      })
-    } catch (e) {
-      reject(e)
-    }
-  })
-}
-
-async function canvas(code, type = 'png', quality = 0.92) {
-    let res = await fetch('https://nurutomo.herokuapp.com/api/canvas?' + queryURL({
-        type,
-        quality
-    }), {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'text/plain',
-            'Content-Length': code.length
-        },
-        body: code
-    })
-    let image = await res.buffer()
-    return image
-}
-
-function queryURL(queries) {
-    return Object.entries(queries).map(([key, value]) => key + (value ? '=' + encodeURIComponent(value) : '')).join('&')
-}
-
-let { fromBuffer } = require('file-type')
-async function sticker(img, url) {
-    url = url ? url : await uploadImage(img)
-    let {
-        mime
-    } = url ? {mime:'image/jpeg'} : await fromBuffer(img)
-    let sc = `let im = await loadImg('data:${mime};base64,'+(await window.loadToDataURI('${url}')))
-c.width = c.height = 512
-let max = Math.max(im.width, im.height)
-let w = 512 * im.width / max
-let h = 512 * im.height / max
-ctx.drawImage(im, 256 - w / 2, 256 - h / 2, w, h)
-`
-    return await canvas(sc, 'webp')
-}
-
-function uploadImage(buffer) {
-    return new Promise(async (resolve, reject) => {
-        try {
-            const {
-                ext
-            } = await fromBuffer(buffer)
-            let form = new FormData()
-            form.append('file', buffer, 'tmp.' + ext)
-            let res = await fetch('https://telegra.ph/upload', {
-                method: 'POST',
-                body: form
-            })
-            let img = await res.json()
-            if (img.error) reject(img.error)
-            else resolve('https://telegra.ph' + img[0].src)
-        } catch (e) {
-            reject(e)
-        }
-    })
+const getRandom = (ext) => {
+  return `${Math.floor(Math.random() * 10000)}${ext}`
 }
