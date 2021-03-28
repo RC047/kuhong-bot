@@ -13,7 +13,7 @@ Nih Ngab
   await m.reply('Sedang membuat...')
 
             let apikey = ('CPt01blLPQ12Zxt51n0Gf18jQqwEr3Vr')
-            let buff = await (await fetch('https://i.ibb.co/MVcHP7k/IMG-20210307-WA1001.jpg')).buffer.()
+            let buff = await (await fetch('https://i.ibb.co/MVcHP7k/IMG-20210307-WA1001.jpg')).buffer()
 
      conn.sendFile(m.chat, buff, 'foto.jpg', str, m)
 }
