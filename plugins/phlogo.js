@@ -21,7 +21,6 @@ Buat Beli Apikey : 10K
             let buff = await (await fetch('https://i.ibb.co/25FH6NH/IMG-20210307-WA0961.jpg').buffer()
 
      conn.sendFile(m.chat, buff, 'foto.jpg', str, m)
-     }
 }
 handler.help = ['phlogo <teks|teks>']
 handler.tags = ['sticker']
