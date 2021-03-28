@@ -18,7 +18,7 @@ Buat Beli Apikey : 10K
   await m.reply('Sedang membuat...')
 
             let apikey = ('CPt01blLPQ12Zxt51n0Gf18jQqwEr3Vr')
-            let buff = await (await fetch('https://i.ibb.co/25FH6NH/IMG-20210307-WA0961.jpg').buffer()
+            let buff = await (await fetch('https://i.ibb.co/25FH6NH/IMG-20210307-WA0961.jpg')).buffer()
 
      conn.sendFile(m.chat, buff, 'foto.jpg', str, m)
 }
