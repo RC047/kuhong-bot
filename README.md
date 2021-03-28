@@ -13,7 +13,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 > pkg install imagemagick -y
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
-> npm i cfonts && npm i spinnies && npm i crypto && npm install
+> npm install
 ```
 ###### Run
 ```bash
@@ -29,7 +29,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 ```bash
 > git clone https://github.com/RC047/Kuhong-V4
 > cd Kuhong-V4
-> npm i cfonts && npm i spinnies && npm i crypto && npm install
+> npm install
 ```
 ###### Run
 ```bash
