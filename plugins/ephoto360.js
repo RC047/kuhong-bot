@@ -42,7 +42,7 @@ freefire
     if (!teks) return conn.reply(m.chat, 'Uhm... Teksnya?', m)
 
   await m.reply('Sedang membuat...')
- let hasil = await (await fetch('http://lolhuman.herokuapp.com/api/ephoto1/' + effect + '?apikey=APIKEYMU&text=' + teks)).buffer.()
+ let hasil = await (await fetch('http://lolhuman.herokuapp.com/api/ephoto1/' + effect + '?apikey=APIKEYMU&text=' + teks)).buffer()
  let caption = `*EPHOTO 360*\n\nEffect : ${effect}`
 
     conn.sendFile(m.chat, hasil, 'ephoto360.jpg', caption, m)
