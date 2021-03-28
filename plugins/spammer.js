@@ -20,7 +20,8 @@ let [number, pesan] = text.split `|`
     let spam9 = `*「 WA SPAMMER 」*\n\nDari : wa.me/${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${pesan}\n\n~Kuhong Bot`
     let spam10 = `*「 WA SPAMMER 」*\n\nDari : wa.me/${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${pesan}\n\n~Kuhong Bot`
 
-    conn.sendMessage(korban + '@s.whatsapp.net', spam1, MessageType.text)                                                                                                                                                                                                          conn.sendMessage(korban + '@s.whatsapp.net', spam2, MessageType.text)
+    conn.sendMessage(korban + '@s.whatsapp.net', spam1, MessageType.text)
+    conn.sendMessage(korban + '@s.whatsapp.net', spam2, MessageType.text)
     conn.sendMessage(korban + '@s.whatsapp.net', spam3, MessageType.text)
     conn.sendMessage(korban + '@s.whatsapp.net', spam4, MessageType.text)
     conn.sendMessage(korban + '@s.whatsapp.net', spam5, MessageType.text)
