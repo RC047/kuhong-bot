@@ -104,6 +104,8 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 
 | IMAGE | YES |
 | :-----------------: | :-------: |
+| Google Image|✅…|
+| Pinterest|✅…|
 | Anime|✅…|
 | Kpop|✅…|
 | Foto Cewek|✅…|
