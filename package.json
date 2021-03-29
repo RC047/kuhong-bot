@@ -31,7 +31,7 @@
   },
   "license": "GPL3",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.4.1",
+    "@adiwajshing/baileys": "^3.5.0",
     "awesome-phonenumber": "^2.45.0",
     "axios": "^0.21.0",
     "brainly-scraper": "^1.0.2",
