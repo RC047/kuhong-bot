@@ -1,4 +1,4 @@
-console.log('Bot Recoded By RC047')
+console.log('Awoakakak :v')
 let { spawn } = require('child_process')
 let path = require('path')
 const CFonts  = require('cfonts')
@@ -7,7 +7,7 @@ CFonts.say('Rendy Gans', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say('Jika Ada Bug Bisa Hubungi\nwa.me/62895337278647', {
+CFonts.say('Jika Ada Bug/Erorr Bisa Hubungi\nwa.me/62895337278647', {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
