@@ -1,4 +1,5 @@
-// Terimakasih kpd RC047 :v
+// Script By RC047
+// Fitur By Xteam
 
 const { sticker } = require('../lib/sticker')
 const { MessageType } = require('@adiwajshing/baileys')
@@ -6,7 +7,7 @@ const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, text }) => {
 let [tipe, emoji] = text.split `|`
  try {
-  if (!tipe) throw 'Silahkan masukan tipe emoji\n\nMisal !emoji whatsapp'
+  if (!tipe) throw 'Silahkan masukan tipe emoji\n\nMisal !semoji whatsapp'
   if (!emoji) throw 'Emoji?'
   let stiker = await sticker(null, global.API('xteam', '/sticker/emojitopng' + tipe, { emo: emoji }, 'APIKEY'), global.packname, global.author)
   conn.sendMessage(m.chat, stiker, MessageType.sticker, {
