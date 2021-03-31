@@ -4,7 +4,8 @@ let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 let fs = require ('fs')
 let path = require('path')
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-  await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
+let RendyGanteng = conn
+  await RendyGanteng.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
   let RendyGans = './src/avatar_contact.png'
   let nomor = 'wa.me/62895337278647'
   let sosmed = 'RC047'
@@ -144,9 +145,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).join`|`})`, 'g'), (_, name) => replace[name])
-  conn.sendFile(m.chat, RendyGans, 'RendyGans.jpg', text.trim(), m)
+  RendyGanteng.sendFile(m.chat, RendyGans, 'RendyGans.jpg', text.trim(), m)
 } catch (e) {
-  conn.reply(m.chat, 'Menu Sedang Erorr!', m)
+  RendyGanteng.reply(m.chat, 'Menu Sedang Erorr!', m)
     throw e
   }
 }
