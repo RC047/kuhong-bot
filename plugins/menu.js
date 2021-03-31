@@ -3,6 +3,7 @@ let ftype = require('file-type');
 let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
 let fs = require ('fs')
 let path = require('path')
+let levelling = require('../lib/levelling')
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let RendyGanteng = conn
   await RendyGanteng.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', '*BY RENDY GANS*')
@@ -12,11 +13,13 @@ let RendyGanteng = conn
   let jadwal = '24 Jam'
   let github = 'https://github.com/RC047/Kuhong-V4'
   let linkgroup = 'https://chat.whatsapp.com/EY0BzXwdV1PKAQQggsDzrU'
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   try {
-    RendyGans = await conn.getProfilePicture(conn.user.jid)
+    RendyGans = await conn.getProfilePicture(who)
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let exp = global.DATABASE.data.users[m.sender].exp
     let limit = global.DATABASE.data.users[m.sender].limit
+    let level = global.DATABASE.data.users[m.sender].level
     let name = conn.getName(m.sender)
     let d = new Date
     let locale = 'id'
@@ -86,6 +89,7 @@ let RendyGanteng = conn
 │• Nama : *%name*
 │• Exp : *%exp XP*
 │• Limit :  *%limit Limit*
+│• Level : *%level* 
 │
 │• Hari : *%week*
 │• Weton : *%weton*
