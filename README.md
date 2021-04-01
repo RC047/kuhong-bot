@@ -17,7 +17,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 ```
 ###### Run
 ```bash
-> node index.js
+> node RendyGans.js
 ```
 ---------
 
