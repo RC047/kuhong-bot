@@ -1,7 +1,4 @@
-console.log('1')
-console.log('2')
-console.log('3')
-console.log('MULAII :V')
+console.log('Ganteng itu gak penting bodo!')
 let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
