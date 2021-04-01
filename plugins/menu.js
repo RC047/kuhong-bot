@@ -1,3 +1,5 @@
+// Jangan Asal Ngubah Wehh :v
+
 let fetch = require('node-fetch');
 let ftype = require('file-type');
 let { MessageType, mentionedJid } = require('@adiwajshing/baileys')
@@ -13,11 +15,11 @@ let RendyGanteng = conn
   let github = 'https://github.com/RC047/Kuhong-V4'
   let linkgroup = 'https://chat.whatsapp.com/EY0BzXwdV1PKAQQggsDzrU'
   try {
-    RendyGans = await conn.getProfilePicture(conn.user.jid)
+    RendyGans = await RendyGanteng.getProfilePicture(conn.user.jid)
     let package = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')))
     let exp = global.DATABASE.data.users[m.sender].exp
     let limit = global.DATABASE.data.users[m.sender].limit
-    let name = conn.getName(m.sender)
+    let name = RendyGanteng.getName(m.sender)
     let d = new Date
     let locale = 'id'
     let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
@@ -109,10 +111,7 @@ let RendyGanteng = conn
 ╰────
 
 ╭─「 Changelog 」
-│• Add Spammer Menu
-│• Add Ephoto360 Maker
-│• Add NoBG Maker
-│• Update StickerGif Maker
+│• Add Leveling
 ╰────
 
 ╭─「 Join Group 」
