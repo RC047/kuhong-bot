@@ -3,14 +3,14 @@
   "version": "4.6.0",
   "description": "Made By RendyCraft047",
   "depecrated": false,
-  "main": "index.js",
+  "main": "RendyGans.js",
   "directories": {
     "lib": "lib",
     "src": "src",
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node RendyGans.js",
     "test": "node test.js"
   },
   "keywords": [
