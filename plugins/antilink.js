@@ -5,9 +5,11 @@ let handler = async function(m, { conn , args, isAdmin, isBotAdmin }) {
   let mentionedJid = [m.sender]
   let name = m.fromMe ? conn.user : conn.contacts[m.sender]
   let users = m.sender
-
+  let chat = global.DATABASE.data.chats[m.chat]
+    
+    if (chat.antiLink) {
     conn.reply(m.chat, `*「 ANTI LINK 」*\n\nTerdeteksi *${username}* telah mengirim link group!\n\nMaaf Kamu akan dikick dari grup ini!`, m)
- await conn.groupRemove(m.chat, [users])
+ await conn.groupRemove(m.chat, [users])}
 }
 handler.tags = ['group']
 handler.customPrefix = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
