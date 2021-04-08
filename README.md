@@ -17,7 +17,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 ```
 ###### Run
 ```bash
-> node RendyGans.js
+> node RendyGans
 ```
 ---------
 
@@ -47,6 +47,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | Anti Virtex|✅…|
 | Anti Toxic|✅…|
 | Anti Delete Pesan|✅…|
+| Perintah Tidak Ditemukan|✅…|
 
 
 | +18 | YES |
