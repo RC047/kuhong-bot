@@ -140,6 +140,7 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 | FUN | YES |
 | :-----------------: | :-------: |
 | Math|✅…|
+| Tebak Gambar|✅…|
 | Slot Machine|✅…|
 | Dadu|✅…|
 | Truth or Dare|✅…|
