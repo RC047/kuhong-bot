@@ -1,22 +1,21 @@
-let handler = async function(m, { conn , args, isAdmin, isBotAdmin }) {
+let handler = m => m
 
-  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-  let username = conn.getName(who)
-  let mentionedJid = [m.sender]
-  let name = m.fromMe ? conn.user : conn.contacts[m.sender]
-  let users = m.sender
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 
-    conn.reply(m.chat, `*「 ANTI LINK 」*\n\nTerdeteksi *${username}* telah mengirim link group!\n\nMaaf Kamu akan dikick dari grup ini!`, m)
- await conn.groupRemove(m.chat, [users])
+handler.before = function (m, { user, isAdmin, isBotAdmin }) {
+
+  if (m.isBaileys && m.fromMe) throw false
+  let chat = global.DATABASE.data.chats[m.chat]
+  let name = this.getName(m.sender)
+  let link = linkRegex.exec(m.text)
+
+  if (isAdmin && chat.antiLink && link) return m.reply(`*${name}* Adalah Admin! :D\n\nBot tidak akan mengkick!`)
+  if (!isBotAdmin && chat.antiLink && link) return m.reply(`Untung Bot Bukan Admin!\n\nKalo nggak Bot pasti udah ngekick kamu *${name}*`)
+  if (!isAdmin && isBotAdmin && chat.antiLink && link) {
+ m.reply(`*「 ANTI LINK 」*\n\nTerdeteksi *${name}* telah mengirim link group!\n\nMaaf Kamu akan dikick dari grup ini!`)
+   this.groupRemove(m.chat, [m.sender])
+  }
 }
-handler.tags = ['group']
-handler.customPrefix = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
-handler.command = new RegExp
 handler.group = true
-
-handler.admin = false
-handler.botAdmin = true
-
-handler.fail = null
 
 module.exports = handler
