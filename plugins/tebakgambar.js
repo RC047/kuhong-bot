@@ -1,34 +1,34 @@
-let imageToBase64 = require('image-to-base64');
-let axios = require("axios");
-let handler = async(m, { conn, text }) => {
-  await m.reply('Searching...')
+let fetch = require('node-fetch')
 
-    axios.get('https://videfikri.com/api/tebakgambar')
-    .then((res) => {
-      imageToBase64(res.data.result.soal_gbr)
-        .then(
-          (ress) => {
-            let buf = Buffer.from(ress, 'base64')
-            let str = `Jawaban :\n${res.data.result.jawaban}`
-
-     conn.sendFile(m.chat, buf, 'foto.jpg', str, m)
-        })
-    })
-}
+let timeout = 120000
+let poin = 1000
+let handler  = async (m, { conn, usedPrefix }) => {
+    conn.tebakgambar = conn.tebakgambar ? conn.tebakgambar : {}
+    let id = m.chat
+    if (id in conn.tebakgambar) {
+        conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakgambar[id][0])
+        throw false
+    }
+    let res = await fetch(global.API('xteam', '/game/tebakgambar', {}, 'APIKEY'))
+    if (res.status !== 200) throw await res.text()
+    let json = await res.json()
+    if (!json.status) throw json
+    let caption = `
+Timeout *${(timeout / 1000).toFixed(2)} detik*
+Ketik ${usedPrefix}hint untuk hint
+Bonus: ${poin} XP
+    `.trim()
+    conn.tebakgambar[id] = [
+      await conn.sendFile(m.chat, json.url, 'tebakgambar.jpg', caption, m),
+      json, poin,
+      setTimeout(() => {
+        if (conn.tebakgambar[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, conn.tebakgambar[id][0])
+        delete conn.tebakgambar[id]
+      }, timeout)
+    ]
+  }
 handler.help = ['tebakgambar']
 handler.tags = ['game']
-handler.command = /^(tebakgambar)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-handler.exp = 0
-handler.limit = false
-
+handler.command = /^tebakgambar/i
+  
 module.exports = handler
