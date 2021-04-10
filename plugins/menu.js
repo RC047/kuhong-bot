@@ -48,6 +48,7 @@ let RendyGanteng = conn
       'game': 'Fun Menu',
       'spammer': 'Spammer Menu',
       'image': 'Image Menu',
+      'internet': 'Search Menu',
       'sound': 'Sound Menu',
       'quotes': 'Random Menu',
       'primbon': 'Primbon Menu',
