@@ -96,7 +96,7 @@ let RendyGanteng = conn
 │• Waktu : *%time*
 │• Online : *%uptime*
 │• Total User : *%totalreg Nomor*
-│• Prefix : *#*
+│• Prefix : *%p*
 │
 │• YouTube : *${sosmed}*
 │• Instagram : *@${sosmed}*
