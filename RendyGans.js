@@ -9,7 +9,7 @@ CFonts.say('Rendy Gans', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`Instagram :\n@rendycraft047`, {
+CFonts.say(`Ada Bug? Chat Admin\nwa.me/62895337278647`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
