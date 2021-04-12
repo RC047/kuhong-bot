@@ -4,8 +4,8 @@ Recode SC : Nurutomo
 # NOTE :
 JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 
-# Ada Bug/Erorr?
-Bisa Chat Admin : wa.me/+62895337278647
+# Ada Bug, Erorr, atau mau Request?
+Bisa Chat Admin : [`Hubungi Admin`](https://wa.me/62895337278647)
 Atau bisa lapor bug/erorr di issue :)
 
 ### FOR TERMUX USER
@@ -185,8 +185,7 @@ Atau bisa lapor bug/erorr di issue :)
 
 
 
+
 ##### My API : [`CLick Here`](https://Github.com/RC047/kuhong-api)
-
-
 ##### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
 ##### Recoded By : [`RC047`](https://GitHub.com/RC047) 
