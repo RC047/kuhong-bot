@@ -192,6 +192,6 @@ Atau bisa lapor bug/erorr di issue :)
 #### Kontak : [`WhatsApp`](https://wa.me/62895337278647)
 #### Donasi : [`Seikhlasnya :)`](https://saweria.co/RC047)
 
-##### My API : [`CLick Here`](https://Github.com/RC047/kuhong-api)
+##### My API : [`Klik Disini`](https://Github.com/RC047/kuhong-api)
 ##### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
 ##### Recoded By : [`RC047`](https://GitHub.com/RC047) 
