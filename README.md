@@ -151,6 +151,9 @@ JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 
 | OWNER | YES |
 | :-----------------: | :-------: |
+| Set Prefix|✅…|
+| Set Menu|✅…|
+| Set Welcome & Bye|✅…|
 | Banned Member|✅…|
 | Unbanned Member|✅…|
 | Broadcast|✅…|
