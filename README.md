@@ -4,6 +4,10 @@ Recode SC : Nurutomo
 # NOTE :
 JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 
+# Ada Bug/Erorr?
+Bisa Chat Admin : wa.me/+62895337278647
+Atau bisa lapor bug/erorr di issue :)
+
 ### FOR TERMUX USER
 ```bash
 > pkg update && pkg upgrade
