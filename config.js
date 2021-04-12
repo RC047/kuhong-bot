@@ -8,14 +8,14 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'd90a9e986e18778b'
+  'https://api.xteam.xyz': 'MASUKAN APIKEY DISINI'
 }
 
 // Sticker WM
-global.packname = 'Sticker Creator'
-global.author = 'By RC047 NJENKK'
+global.packname = 'Pembuat Sticker'
+global.author = 'Credit RC047'
 
-global.multiplier = 69 // The higher, The harder levelup
+global.multiplier = 100 // The higher, The harder levelup
 
 let fs = require('fs')
 let chalk = require('chalk')
