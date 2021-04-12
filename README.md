@@ -5,7 +5,7 @@ Recode SC : Nurutomo
 JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
 
 # Ada Bug, Erorr, atau mau Request?
-Bisa Chat Admin : [`Hubungi Admin`](https://wa.me/62895337278647)
+Bisa Chat Admin : [`Klik Disini`](https://wa.me/62895337278647)
 Atau bisa lapor bug/erorr di issue :)
 
 ### FOR TERMUX USER
