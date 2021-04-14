@@ -185,7 +185,7 @@ Atau bisa lapor bug/erorr di issue :)
 
 
 
-# MEDIA SOSIAL
+# MEDIA SOSIAL #
 
 #### YouTube : [`RC047`](https://www.youtube.com/c/RC047)
 #### Instagram : [`@rendycraft047`](https://www.instagram.com/rendycraft047)
