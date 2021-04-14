@@ -185,12 +185,13 @@ Atau bisa lapor bug/erorr di issue :)
 
 
 
-# MEDIA SOSIAL #
+# MEDIA SOSIAL
 
 #### YouTube : [`RC047`](https://www.youtube.com/c/RC047)
 #### Instagram : [`@rendycraft047`](https://www.instagram.com/rendycraft047)
 #### Kontak : [`WhatsApp`](https://wa.me/62895337278647)
 #### Donasi : [`Seikhlasnya :)`](https://saweria.co/RC047)
-##### API Rest : [`kuhong-api`](https://Github.com/RC047/kuhong-api)
-##### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
-##### Recoded By : [`RC047`](https://GitHub.com/RC047) 
+
+#### API Rest : [`kuhong-api`](https://Github.com/RC047/kuhong-api)
+#### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
+#### Recoded By : [`RC047`](https://GitHub.com/RC047) 
