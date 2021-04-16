@@ -1,8 +1,17 @@
+let fs = require('fs')
+
 let handler = async (m, { conn, text }) => {
-  conn.reply(m.chat, 'Selamat Anda Mendapatkan\n500 XP!', m)
+
+let data = fs.readFileSync('/data/data/com.termux/files/home/kuhong/lib/mining.js')
+let parse = JSON.parse(data)
+let random = Math.floor(Math.random() * parse.length);
+let json = parse[random]
+
+  conn.reply(m.chat, `Selamat Anda Mendapatkan\n*+${json.exp} XP!*`, m)
+   global.DATABASE._data.users[m.sender].exp += json.exp * 1
 }
 handler.help = ['mining']
-handler.tags = ['exp']
+handler.tags = ['xp']
 handler.command = /^mining/i
 handler.owner = false
 handler.mods = false
@@ -15,6 +24,5 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.limit = true
-handler.exp = 500
 
 module.exports = handler
