@@ -2,7 +2,7 @@ let fs = require('fs')
 
 let handler = async (m, { conn, text }) => {
 
-let data = fs.readFileSync('/data/data/com.termux/files/home/kuhong/lib/mining.js')
+let data = fs.readFileSync('/data/data/com.termux/files/home/Kuhong-V4/lib/mining.js')
 let parse = JSON.parse(data)
 let random = Math.floor(Math.random() * parse.length);
 let json = parse[random]
