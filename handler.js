@@ -68,6 +68,7 @@ module.exports = {
       if (m.isBaileys) return
       m.exp += Math.ceil(Math.random() * 10)
   
+      await conn.chatRead(m.chat)
     	let usedPrefix
       let _user = global.DATABASE.data && global.DATABASE.data.users && global.DATABASE.data.users[m.sender]
 
