@@ -1,9 +1,9 @@
 # Selamat Datang di Github Kuhong-V4 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="50px">
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="500px">
 
-# Ada Bug, Erorr, atau mau Request? <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/happy.gif" width="30px">
+## Ada Bug, Erorr, atau mau Request? <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/happy.gif" width="30px">
 [`Chat Admin`](https://wa.me/62895337278647)
---------------
+Atau Bisa Lewat Issue :)
 
 ### FOR TERMUX USER
 ```bash
