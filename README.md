@@ -1,12 +1,10 @@
-# Kuhong-V4
-Recode SC : Nurutomo
+# Selamat Datang di Github Kuhong-V4 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="50px">
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="500px">
 
-# NOTE :
-JANGAN UBAH NAMA BOT BIAR BOTNYA GAK RUSAK!!
-
-# Ada Bug, Erorr, atau mau Request?
+# Ada Bug, Erorr, atau mau Request? <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/happy.gif" width="30px">
 Bisa Chat Admin : [`Klik Disini`](https://wa.me/62895337278647)
 Atau bisa lapor bug/erorr di issue :)
+--------------
 
 ### FOR TERMUX USER
 ```bash
@@ -41,151 +39,149 @@ Atau bisa lapor bug/erorr di issue :)
 ```
 --------------
 
-## Fitur Bot
+## Fitur Bot <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Medal.gif" width="30px">
 
 | BOT SYSTEM | YES
 | :---------------------------------------------: | :-----------: |
-| Daftar|✅…|
-| Leveling|✅…|
-| Anti Link|✅…|
-| Anti Virtex|✅…|
-| Anti Toxic|✅…|
-| Anti Delete Pesan|✅…|
-| Perintah Tidak Ditemukan|✅…|
+| Daftar |✅|
+| Leveling |✅|
+| Anti Link |✅|
+| Anti Virtex |✅|
+| Anti Toxic |✅|
+| Anti Delete Pesan |✅|
+| Perintah Tidak Ditemukan |✅|
 
 
 | +18 | YES |
 | :-----------------: | :-------: |
-| Kode Nuklir|✅…|
-| Random Hentai|✅…|
+| Kode Nuklir |✅|
+| Random Hentai |✅|
 
 
 |  CREATOR  |                                           YES |
 | :---------------------------------------------: | :-----------: |
-| Sticker Maker|✅…|
-| Sticker Gif Maker|✅…|
-| Convert Sticker To Image|✅…|
-| Harta Tahta|✅…|
-| TextPro Maker|✅…|
-| Photooxy Maker|✅…|
-| Ephoto360 Maker|✅…|
-| QR Code|✅…|
-| Custom Harta Tahta|✅…|
-| Glitchtext Maker|✅…|
-| PornHub Logo Maker|✅…|
-| Nulis Tugas|✅…|
-| Quotes Maker |✅…|
+| Sticker Maker |✅|
+| Sticker Gif Maker |✅|
+| Convert Sticker To Image |✅|
+| Harta Tahta |✅|
+| TextPro Maker |✅|
+| Photooxy Maker |✅|
+| Ephoto360 Maker |✅|
+| QR Code |✅|
+| Custom Harta Tahta |✅|
+| Glitchtext Maker |✅|
+| PornHub Logo Maker |✅|
+| Nulis Tugas |✅|
+| Quotes Maker  |✅|
 
 
 | DOWNLOADER | YES |
 | :-----------------: | :-------: |
-| YTMP4|✅…|
-| YTMP3|✅…|
-| YT PLAY|✅…|
-| INSTAGRAM|✅…|
-| FACEBOOK|✅…|
-| TWITTER|✅…|
+| YTMP4 |✅|
+| YTMP3 |✅|
+| YT PLAY |✅|
+| INSTAGRAM |✅|
+| FACEBOOK |✅|
+| TWITTER |✅|
 
 
 | PRIMBON | YES |
 | :-----------------: | :-------: |
-| Artinama|✅…|
-| Info Zodiak|✅…|
+| Artinama |✅|
+| Info Zodiak |✅|
 
 
 | SPAMMER | YES |
 | :-----------------: | :-------: |
-| PizzaHut|✅…|
-| DanaCinta|✅…|
-| SpamCall|✅…|
-| SpamSMS|✅…|
-| SpamWA|✅…|
+| PizzaHut |✅|
+| DanaCinta |✅|
+| SpamCall |✅|
+| SpamSMS |✅|
+| SpamWA |✅|
 
 | EDUCATION | YES |
 | :-----------------: | :-------: |
-| Brainly|✅…|
-| Belajar|✅…|
+| Brainly |✅|
+| Belajar |✅|
 
 
 | IMAGE | YES |
 | :-----------------: | :-------: |
-| Google Image|✅…|
-| Pinterest|✅…|
-| Anime|✅…|
-| Kpop|✅…|
-| Foto Cewek|✅…|
-| Foto Cowok|✅…|
+| Google Image |✅|
+| Pinterest |✅|
+| Anime |✅|
+| Kpop |✅|
+| Foto Cewek |✅|
+| Foto Cowok |✅|
 
 
 | GROUP | YES |
 | :-----------------: | :-------: |
-| AFK|✅…|
-| Anti Link|✅…|
-| Link Group|✅…|
-| Promote Member|✅…|
-| Demote Member|✅…|
-| Hide Tag|✅…|
-| Add Member|✅…|
-| Kick Member|✅…|
-| Welcome & Bye Group|✅…|
-| Delete Pesan|✅…|
+| AFK |✅|
+| Anti Link |✅|
+| Link Group |✅|
+| Promote Member |✅|
+| Demote Member |✅|
+| Hide Tag |✅|
+| Add Member |✅|
+| Kick Member |✅|
+| Welcome & Bye Group |✅|
+| Delete Pesan |✅|
 
 
 | RANDOM | YES |
 | :-----------------: | :-------: |
-| Quotes|✅…|
-| Pantun|✅…|
-| Kata Bijak|✅…|
-| Puisi|✅…|
-| Syair|✅…|
-| Fakta Unik|✅…|
+| Quotes |✅|
+| Pantun |✅|
+| Kata Bijak |✅|
+| Puisi |✅|
+| Syair |✅|
+| Fakta Unik |✅|
 
 
 | FUN | YES |
 | :-----------------: | :-------: |
-| Math|✅…|
-| Tebak Gambar|✅…|
-| Slot Machine|✅…|
-| Dadu|✅…|
-| Truth or Dare|✅…|
-| IQ Test|✅…|
-| Alay|✅…|
-| Hilih|✅…|
+| Math |✅|
+| Tebak Gambar |✅|
+| Slot Machine |✅|
+| Dadu |✅|
+| Truth or Dare |✅|
+| IQ Test |✅|
+| Alay |✅|
+| Hilih |✅|
 
 
 | OWNER | YES |
 | :-----------------: | :-------: |
-| Set Prefix|✅…|
-| Set Menu|✅…|
-| Set Welcome & Bye|✅…|
-| Banned Member|✅…|
-| Unbanned Member|✅…|
-| Broadcast|✅…|
-| Group Broadcast|✅…|
-| Clear All Chat|✅…|
+| Set Prefix |✅|
+| Set Menu |✅|
+| Set Welcome & Bye |✅|
+| Banned Member |✅|
+| Unbanned Member |✅|
+| Broadcast |✅|
+| Group Broadcast |✅|
+| Clear All Chat |✅|
 
 
 | PREMIUM MENU | YES |
 | :-----------------: | :-------: |
-| Jadi Bot|✅…|
-| Join GC|✅…|
+| Jadi Bot |✅|
+| Join GC |✅|
 
 
  TENTANG BOT | YES |
 | :-----------------: | :-------: |
-| Report|✅…|
-| Request Fitur|✅…|
-| Info Bot|✅…|
-| Status Bot|✅…|
-| Donasi|✅…|
-| Info Premium|✅…|
-
+| Report |✅|
+| Request Fitur |✅|
+| Info Bot |✅|
+| Status Bot |✅|
+| Donasi |✅|
+| Info Premium |✅|
 
 * Masih Banyak Lagi
+--------------
 
-
-
-# MEDIA SOSIAL
+# MEDIA SOSIAL <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="30px">
 
 #### YouTube : [`RC047`](https://www.youtube.com/c/RC047)
 #### Instagram : [`@rendycraft047`](https://www.instagram.com/rendycraft047)
