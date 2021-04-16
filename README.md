@@ -2,8 +2,7 @@
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="500px">
 
 # Ada Bug, Erorr, atau mau Request? <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/happy.gif" width="30px">
-Bisa Chat Admin : [`Klik Disini`](https://wa.me/62895337278647)
-Atau bisa lapor bug/erorr di issue :)
+[`Chat Admin`](https://wa.me/62895337278647)
 --------------
 
 ### FOR TERMUX USER
