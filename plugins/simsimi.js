@@ -6,7 +6,7 @@ let handler  = async (m, { conn, text }) => {
 
   if (!text) throw 'Teksnya gak ada kak'
 
-  let res = await fetch(`https://raw.githubusercontent.com/herokuapp-com/kuhong-api/main/api/simsimi.json`)
+  let res = await fetch(`https://kuhong-api.herokuapp.com/api/simsimi?kata=${text}&apikey=APIKEY`)
   let json = await res.json()
   let random = Math.floor(Math.random() * json.length)
   let data = json[random]
