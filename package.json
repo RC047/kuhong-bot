@@ -1,6 +1,6 @@
 {
-  "name": "Kuhong-V4",
-  "version": "4.6.5",
+  "name": "Kuhong",
+  "version": "4.7.0",
   "description": "Made By RendyCraft047",
   "depecrated": false,
   "main": "RendyGans.js",
@@ -19,19 +19,19 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/RC047/Kuhong-V4",
+  "homepage": "https://github.com/RC047/Kuhong",
   "author": {
     "name": "RC047"
   },
   "repository": {
-    "url": "https://github.com/RC047/Kuhong-V4.git"
+    "url": "https://github.com/RC047/Kuhong.git"
   },
   "bugs": {
-    "url": "https://github.com/RC047/Kuhong-V4/issues"
+    "url": "https://github.com/RC047/Kuhong/issues"
   },
   "license": "GPL3",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.0",
+    "@adiwajshing/baileys": "^3.5.1",
     "awesome-phonenumber": "^2.45.0",
     "axios": "^0.21.0",
     "brainly-scraper": "^1.0.2",
