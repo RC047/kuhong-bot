@@ -12,8 +12,8 @@ Atau Bisa Lewat Issue :)
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/RC047/Kuhong-V4
-> cd Kuhong-V4
+> git clone https://github.com/RC047/kuhong-bot
+> cd kuhong-bot
 > npm install
 ```
 ###### Run
@@ -28,8 +28,8 @@ Atau Bisa Lewat Issue :)
 * Download And Install FFMPEG [`Click Here`](https://ffmpeg.org/download.html) (don't forget to path) 
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php) (if nulis want work,  checklist columns 1,2,3,5,6) 
 ```bash
-> git clone https://github.com/RC047/Kuhong-V4
-> cd Kuhong-V4
+> git clone https://github.com/RC047/kuhng-bot
+> cd kuhong-bot
 > npm install
 ```
 ###### Run
@@ -187,6 +187,6 @@ Atau Bisa Lewat Issue :)
 #### Kontak : [`WhatsApp`](https://wa.me/62895337278647)
 #### Donasi : [`Seikhlasnya :)`](https://saweria.co/RC047)
 
-#### API Rest : [`kuhong-api`](https://kuhong-api.herokuapp.com/)
+#### Rest API : [`kuhong-api`](https://kuhong-api.herokuapp.com/)
 #### Created By : [`Nurutomo`](https://GitHub.com/Nurutomo) 
 #### Recoded By : [`RC047`](https://GitHub.com/RC047) 
